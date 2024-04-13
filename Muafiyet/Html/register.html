@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kullanıcı Kayıt Sayfası</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/Login-Register.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <img src="data:image/png;base64,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" />
+        </div>
+        <form id="registerForm" method="post" autocomplete="off" enctype="multipart/form-data">
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-id-card"></i>
+                    </span>
+                    <input type="text" class="form-control" name="UTc" id="UTc" placeholder="T.C. Kimlik No" required />
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" name="Uemail" id="Uemail" placeholder="Email" required />
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="password" class="form-control" name="Upwd" id="Upwd" placeholder="Şifre" required />
+                </div>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+            </div>
+            <div class="form-footer">
+                <p>Zaten bir hesabınız var mı? <a href="/Html/login.html">Giriş Yap</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        var inputElement = document.getElementById("UTc");
+
+        inputElement.addEventListener("input", function () {
+         
+            var value = this.value;
+
+            if (value.length != 11 || !isNumeric(value)) {
+                this.setCustomValidity("TC Kimlik numarası 11 haneli olmalı ve sadece rakamlardan oluşmalıdır.");
+            } else {
+                // Hata mesajını temizle
+                this.setCustomValidity("");
+            }
+        });
+
+        // Girilen değerin sadece rakamlardan oluşup oluşmadığını kontrol etmek için fonksiyon
+        function isNumeric(str) {
+            return /^\d+$/.test(str);
+        }
+
+</script>
+
+    <!-- Bootstrap Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/bootstrap-icons.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+</body>
+
+</html>
